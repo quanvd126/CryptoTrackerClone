@@ -22,17 +22,17 @@ const CoinItem = ({ marketCoin }) => {
     price_change_percentage_24h < 0 ? "#ea3943" : "#16c784";
 
   const normalizeMarketCap = (marketCap) => {
-    if (marketCap > 1_000_000_000_000) {
-      return `${Math.floor(marketCap / 1_000_000_000_000)} T`;
+    if (marketCap > 1000000000000) {
+      return `${Math.floor(marketCap / 1000000000000)} T`;
     }
-    if (marketCap > 1_000_000_000) {
-      return `${Math.floor(marketCap / 1_000_000_000)} B`;
+    if (marketCap > 1000000000) {
+      return `${Math.floor(marketCap / 1000000000)} B`;
     }
-    if (marketCap > 1_000_000) {
-      return `${Math.floor(marketCap / 1_000_000)} M`;
+    if (marketCap > 1000000) {
+      return `${Math.floor(marketCap / 1000000)} M`;
     }
-    if (marketCap > 1_000) {
-      return `${Math.floor(marketCap / 1_000)} K`;
+    if (marketCap > 1000) {
+      return `${Math.floor(marketCap / 1000)} K`;
     }
     return marketCap;
   };
