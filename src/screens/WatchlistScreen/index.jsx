@@ -22,9 +22,6 @@ const WatchlistScreen = () => {
     setLoading(false);
   };
 
-  useEffect(() => {
-    fetchWatchlistedCoins();
-  }, [watchlistCoinIds]);
 
   return (
     <FlatList 
