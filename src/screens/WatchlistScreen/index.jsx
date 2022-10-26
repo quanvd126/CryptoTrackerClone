@@ -22,7 +22,6 @@ const WatchlistScreen = () => {
     setLoading(false);
   };
 
-
   return (
     <FlatList 
       data={coins}
